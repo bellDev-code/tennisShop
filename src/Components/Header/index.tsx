@@ -1,11 +1,12 @@
 import React from 'react'
-import { Container, Menu, MenuList } from './styles'
+import { Container, MenuList, MenuLink } from './styles'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const headerList = [
         { 
             title: '브랜드', 
-            url: '/'
+            url: '/brand'
          },
         {
             title: '쇼핑하기',
@@ -27,7 +28,7 @@ const Header = () => {
         <Container>
             <MenuList>
                 {headerList.map((i) => {
-                    return <Menu>{i.title}</Menu>
+                    return <MenuLink to={i.url}>{i.title}</MenuLink>
                 })}
             </MenuList>
         </Container>
