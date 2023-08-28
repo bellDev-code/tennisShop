@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, MenuList, MenuLink } from './styles'
-import { Link } from 'react-router-dom'
+import { Container, MenuList, MenuLink, LogoWrap } from './styles'
+import Logo from "../../assets/Logo/logo.png"
 
 const Header = () => {
     const headerList = [
@@ -27,6 +27,9 @@ const Header = () => {
     return (
         <Container>
             <MenuList>
+                <LogoWrap>
+                    <img src={Logo} alt='logo' />
+                </LogoWrap>
                 {headerList.map((i) => {
                     return <MenuLink to={i.url}>{i.title}</MenuLink>
                 })}

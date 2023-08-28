@@ -10,6 +10,15 @@ export const MenuList = styled.div`
     display: flex;
 `
 
+export const LogoWrap = styled.div`
+    display: flex;
+    padding: 20px 0;
+
+    > img {
+        width: 200px;
+    }
+`
+
 export const MenuLink = styled(Link)`
     padding: 0 10px;
     border: 0;

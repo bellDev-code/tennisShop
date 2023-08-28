@@ -1,8 +1,14 @@
 import React from "react";
+import SwiperContainer from "../../Components/AdSwiper";
+import { Container } from "./styles";
+import Notice from "../../Components/Notice";
 
 const Home = () => {
     return (
-        <div>홈 라우터</div>
+        <Container>
+            <SwiperContainer />
+            <Notice />
+        </Container>
     )
 }
 
