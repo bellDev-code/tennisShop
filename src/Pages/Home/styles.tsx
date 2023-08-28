@@ -4,3 +4,6 @@ export const Container = styled.div`
     display: 100%;
 `
 
+export const MainWrap = styled.div`
+    margin: 0 80px;
+`

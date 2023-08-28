@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    margin: 0px 50px 100px 50px;
+    margin: 0 0 100px 0;
 `
 
 export const NoticeBox = styled.div`

@@ -1,13 +1,17 @@
 import React from "react";
 import SwiperContainer from "../../Components/AdSwiper";
-import { Container } from "./styles";
+import { Container, MainWrap } from "./styles";
 import Notice from "../../Components/Notice";
+import Category from "../../Components/Category";
 
 const Home = () => {
     return (
         <Container>
             <SwiperContainer />
-            <Notice />
+            <MainWrap>
+                <Notice />
+                <Category />
+            </MainWrap>
         </Container>
     )
 }
