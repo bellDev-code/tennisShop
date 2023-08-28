@@ -1,29 +1,10 @@
 import React from 'react'
-import { Container, MenuList, MenuLink, LogoWrap } from './styles'
+import { Container, MenuList, MenuLink, LogoWrap, SearchBox, ReserveBtn, SearchForm, IconWrap } from './styles'
 import Logo from "../../assets/Logo/logo.png"
+import { headerList } from './mockup'
+import { BsSearch } from "react-icons/bs";
 
 const Header = () => {
-    const headerList = [
-        { 
-            title: '브랜드', 
-            url: '/brand'
-         },
-        {
-            title: '쇼핑하기',
-            url: '/'
-        },
-        {   title: '커뮤니티',
-            url: '/'
-        },
-        {
-            title: '런칭캘린더',
-            url: '/'
-        },
-        {
-            title: '고객센터',
-            url: '/'
-        }
-    ]
     return (
         <Container>
             <MenuList>
@@ -34,6 +15,15 @@ const Header = () => {
                     return <MenuLink to={i.url}>{i.title}</MenuLink>
                 })}
             </MenuList>
+            <SearchBox>
+                <ReserveBtn>지금 스트링 맡겨도 돼요?</ReserveBtn>
+                <SearchForm>
+                    <IconWrap>
+                        <BsSearch />
+                    </IconWrap>
+                    <input type='text' />
+                </SearchForm>
+            </SearchBox>
         </Container>
     )
 }
