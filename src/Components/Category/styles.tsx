@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.section`
     width: 100%;
+    margin: auto;
     max-width: 1200px;
     position: relative;
     box-sizing: border-box;
