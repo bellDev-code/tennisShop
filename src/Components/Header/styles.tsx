@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Container = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px 10px;
 `
 
@@ -54,6 +54,10 @@ export const ReserveBtn = styled.button`
     padding: 8px 25px;
     border-radius: 10px;
     cursor: pointer;
+
+    > svg {
+        padding-right: 5px;
+    }
 ` 
 
 export const SearchForm = styled.form`
@@ -80,4 +84,13 @@ export const IconWrap = styled.span`
     position: relative;
     left: 35px;
     z-index: 1;
+`
+
+export const ProfileWrap = styled.div`
+    cursor: pointer;
+    > svg {
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+    }
 `
