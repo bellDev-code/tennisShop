@@ -14,6 +14,7 @@ export const MenuList = styled.div`
 export const LogoWrap = styled.div`
     display: flex;
     padding: 20px 0;
+    cursor: pointer;
 
     > img {
         width: 200px;

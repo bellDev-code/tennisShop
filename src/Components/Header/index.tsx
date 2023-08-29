@@ -5,16 +5,22 @@ import { headerList } from './mockup'
 import { BsSearch, BsFillCartFill } from "react-icons/bs";
 import { AiOutlineQuestionCircle } from "react-icons/ai"
 import { FaMale } from "react-icons/fa"
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
+    
+    const goToLogin = () => navigate('/login')
+    const goToHome = () => navigate('/')
+
     return (
         <Container>
             <MenuList>
-                <LogoWrap>
+                <LogoWrap onClick={goToHome}>
                     <img src={Logo} alt='logo' />
                 </LogoWrap>
                 {headerList.map((i) => {
-                    return <MenuLink to={i.url}>{i.title}</MenuLink>
+                    return <MenuLink key={i.title} to={i.url}>{i.title}</MenuLink>
                 })}
             </MenuList>
             <SearchBox>
@@ -27,7 +33,7 @@ const Header = () => {
                 </SearchForm>
                 <ProfileWrap>
                     <BsFillCartFill />
-                    <FaMale />
+                    <FaMale onClick={goToLogin} />
                 </ProfileWrap>
             </SearchBox>
         </Container>
