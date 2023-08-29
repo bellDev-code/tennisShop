@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    margin: 0 0 100px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 90px auto;
 `
 
 export const NoticeBox = styled.div`
